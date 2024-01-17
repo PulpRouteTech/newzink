@@ -34,8 +34,8 @@ export const SectionOne = () => {
         <div className="relative flex justify-center ">
           <div className=" w-full  ">
             <Slider {...settings}>
-              {images.map((image) => (
-                <div className="relative h-screen">
+              {images.map((image, index) => (
+                <div key={index} className="relative h-screen">
                   <Image
                     src={image}
                     alt='image'
