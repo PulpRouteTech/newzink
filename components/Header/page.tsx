@@ -15,16 +15,16 @@ export default function Header(){
 
         <div className="flex items-center justify-between">
 
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 bg-red-900 px-4 py-2">
 
-            <img className="h-12 w-auto" src="/next.svg" alt="Logo" />
+            <div className=" text-xl font-bold "> NewzInk</div>
 
           </div>
 
           <nav className="hidden md:flex space-x-10">
             <ul className=" flex gap-2 ">
                 {menuData.map((menuItem, index)=>(
-                    <li key={index} className=" p-2 text-lg">
+                    <li key={index} className=" p-2 text-lg text-white">
                         <Link 
                         href={menuItem.path}>
                             {menuItem.title}

@@ -34,7 +34,7 @@ module.exports = {
         
        
         
-        primary: "#719430",
+        primary: "#525252",
       },
 
   },
