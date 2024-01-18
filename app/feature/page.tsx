@@ -12,6 +12,7 @@ const Feature = () => {
   return (
     
     <section className=" py-2 bg-primary/50">
+      
       <FeaturePage/>
       
     </section>
