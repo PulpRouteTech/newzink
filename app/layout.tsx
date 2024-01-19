@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/Header/page'
+import Header from '@/components/Header/Navbar'
 import Footer from '@/components/Footer/page'
 
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-        <header className='sticky top-0 z-[9999] shadow-sm'>
+        <header className=' scroll-auto top-0 z-[9999] shadow-sm'>
           <Header/>
         </header>
         <main >

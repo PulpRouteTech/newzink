@@ -1,4 +1,11 @@
+"use client";
 import Image from "next/image";
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+} from "next-share";
 
 export const PostPage = () => {
   return (
@@ -8,6 +15,23 @@ export const PostPage = () => {
           अंबेडकर के पोते ने राम मंदिर का आमंत्रण ठुकराया
           <hr className="mt-2 border"></hr>
         </h1>
+      </div>
+
+      <div className="ml-4 justify-between">
+        <FacebookShareButton
+          url={"https://newzink.com/post"}
+          quote={"अंबेडकर के पोते ने राम मंदिर का आमंत्रण ठुकराया"}
+          hashtag={"#newzink"}
+        >
+          <FacebookIcon size={32} round />
+        </FacebookShareButton>
+        <WhatsappShareButton
+          url={"https://newzink.com/post"}
+          quote={"अंबेडकर के पोते ने राम मंदिर का आमंत्रण ठुकराया"}
+          hashtag={"#newzink"}
+        >
+          <WhatsappIcon size={32} round />
+        </WhatsappShareButton>
       </div>
       <div className=" relative h-[400px] lg:h-[500px]">
         <Image
@@ -27,13 +51,13 @@ export const PostPage = () => {
           </b>
           <br></br>
           वंचित बहुजन अघाडी के अध्यक्ष एवं बाबा साहेब भीम राव अंबेडकर के पौत्र
-          प्रकाश अंबेडकर ने 22 जनवरी को अयोध्या में होने वाले राम मंदिर <b>प्राण
-          प्रतिष्ठा</b> समारोह में राम मंदिर ट्रस्ट के आमंत्रण को अस्वीकार कर दिया
-          है। कम्युनिस्ट पार्टी ऑफ इंडिया, कम्युनिस्ट पार्टी ऑफ इंडिया,
-          (मार्क्सवादी), कांग्रेस सहित कई अन्य दलों ने भी राम मंदिर के प्राण
-          प्रतिष्ठा’ समारोह में जाने से मना कर दिया है। प्रकाश अंबेडकर ने हिंदी
-          में लिखे निमंत्रण पत्र को सोशल मीडिया <b>एक्स</b> पर साझा करते हुए लिखा।
-          अयोध्या में राम मंदिर के उद्घाटन का निमंत्रण मिला.
+          प्रकाश अंबेडकर ने 22 जनवरी को अयोध्या में होने वाले राम मंदिर{" "}
+          <b>प्राण प्रतिष्ठा</b> समारोह में राम मंदिर ट्रस्ट के आमंत्रण को
+          अस्वीकार कर दिया है। कम्युनिस्ट पार्टी ऑफ इंडिया, कम्युनिस्ट पार्टी ऑफ
+          इंडिया, (मार्क्सवादी), कांग्रेस सहित कई अन्य दलों ने भी राम मंदिर के
+          प्राण प्रतिष्ठा’ समारोह में जाने से मना कर दिया है। प्रकाश अंबेडकर ने
+          हिंदी में लिखे निमंत्रण पत्र को सोशल मीडिया <b>एक्स</b> पर साझा करते
+          हुए लिखा। अयोध्या में राम मंदिर के उद्घाटन का निमंत्रण मिला.
           <br></br>
           मैं उक्त कार्यक्रम में शामिल नहीं होऊंगा क्योंकि यह कार्यक्रम
           भाजपा-आरएसएस द्वारा हथिया लिया गया है; एक धार्मिक आयोजन चुनावी लाभ के
@@ -88,6 +112,22 @@ export const PostPage = () => {
           नरेंद्र मोदी एवं राम मंदिर ट्रस्ट समिति की भी प्राण प्रतिष्ठा समारोह
           का राजनीतिक इस्तेमाल पर आलोचना की है।
         </p>
+        <div className="ml-4 justify-between">
+        <FacebookShareButton
+          url={"https://newzink.com/post"}
+          quote={"अंबेडकर के पोते ने राम मंदिर का आमंत्रण ठुकराया"}
+          hashtag={"#newzink"}
+        >
+          <FacebookIcon size={32} round />
+        </FacebookShareButton>
+        <WhatsappShareButton
+          url={"https://newzink.com/post"}
+          quote={"अंबेडकर के पोते ने राम मंदिर का आमंत्रण ठुकराया"}
+          hashtag={"#newzink"}
+        >
+          <WhatsappIcon size={32} round />
+        </WhatsappShareButton>
+      </div>
       </div>
     </div>
   );
