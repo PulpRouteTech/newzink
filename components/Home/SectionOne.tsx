@@ -26,8 +26,7 @@ export const SectionOne = () => {
             <p className="hidden md:block text-black font-semibold">
               अम्बेडकर ने चेतावनी दी थी कि <strong>यदि पार्टियाँ धर्म को देश से ऊपर
               रखेंगी, तो हमारी स्वतंत्रता दूसरी बार ख़तरे में पड़ जाएगी </strong> 
-              और
-              संभवतः हमेशा के लिए खो जाएगी।...{" "}
+              और संभवतः हमेशा के लिए खो जाएगी।...{" "}
             </p>
             <Link
               href="/post"
