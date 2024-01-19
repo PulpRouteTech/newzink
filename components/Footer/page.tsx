@@ -1,3 +1,10 @@
+
+import {
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineYoutube,
+} from "react-icons/ai";
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className=" body-font items-center justify-between ">
@@ -9,67 +16,17 @@ export default function Footer() {
           >
             <span className="ml-3 text-xl text-red-700 font-bold">NewzInk</span>
           </a>
-
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a
-              href="https://www.facebook.com/newzinks"
-              className="text-black hover:text-blue-700"
-            >
-              <svg
-                fill="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-            <a className="ml-3 text-black hover:text-blue-700">
-              <svg
-                fill="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a
-              href="https://www.instagram.com/newz.ink"
-              className="ml-3 text-black hover:text-pink-700"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-            <a
-              href="https://www.youtube.com/@Newzink"
-              className="text-black hover:text-red-700 px-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-              </svg>
-            </a>
-          </span>
+          <div className="flex flex-row justify-around p-10 items-center">
+          <Link href="https://www.facebook.com/newzinks">
+          <AiOutlineFacebook size={30} className=" cursor-pointer text-blue-700 hover:text-blue-900" />
+          </Link>
+          <Link href="https://www.instagram.com/newz.ink">
+          <AiOutlineInstagram size={30} className="cursor-pointer text-pink-700 hover:text-pink-900" />
+          </Link>
+          <Link href="https://www.youtube.com/@Newzink">
+          <AiOutlineYoutube size={30} className=" cursor-pointer text-red-700 hover:text-red-900" />
+          </Link>
+        </div>
         </div>
       </div>
       <div className="container px-5 py-4 mx-auto">

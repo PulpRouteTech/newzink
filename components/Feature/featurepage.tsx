@@ -2,6 +2,7 @@ import Image from "next/image";
 
 export const FeaturePage = () => {
   return (
+    
     <div className=" mx-2 lg:mx-16 bg-white py-10 mt-5 ">
       <div className="head">
         <h1 className=" text-2xl md:text-3xl text-black py-5 px-10">

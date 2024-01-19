@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-// import Logo from "../public/logo.png"
 import Link from "next/link";
 import {
   AiOutlineMenu,
@@ -20,19 +19,19 @@ const Navbar = () => {
   return (
     <nav className=" scroll-auto w-full h-24 shadow-xl bg-red-700">
       <div className="flex items-center justify-center h-full w-full px-4 2xl:px-16">
-        <Link href="/">
-          <h1 className=" hover:text-100 hover:border-l text-white p-2 text-xl font-semibold  ">NewzInk</h1>
-        </Link>
         {/* <Link href="/">
+          <h1 className=" hover:text-100 hover:border-l text-white p-2 text-xl font-semibold  ">NewzInk</h1>
+        </Link> */}
+        <Link href="/">
           <Image
-            src={Logo}
+            src="/images/logo.png"
             alt="logo"
             width="205"
             height="75"
-            className=" cursor-pointer"
-            priority
+            className=" shadow-2xl cursor-pointer rounded-xl"
+          
           />
-        </Link> */}
+        </Link>
         <div className="hidden sm:flex">
           <ul className="hidden sm:flex items-center justify-center">
             <Link href="/about">
@@ -74,6 +73,17 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
+          <div className="flex flex-row justify-around p-10 items-center">
+          <Link href="https://www.facebook.com/newzinks">
+          <AiOutlineFacebook size={30} className=" cursor-pointer text-white hover:text-blue-300" />
+          </Link>
+          <Link href="https://www.instagram.com/newz.ink">
+          <AiOutlineInstagram size={30} className="cursor-pointer text-white hover:text-pink-200" />
+          </Link>
+          <Link href="https://www.youtube.com/@Newzink">
+          <AiOutlineYoutube size={30} className=" cursor-pointer text-white hover:text-gray-300" />
+          </Link>
+        </div>
         </div>
         <div onClick={handleNav} className="sm:hidden cursor-pointer pl-24">
           <AiOutlineMenu size={25} />
@@ -155,20 +165,26 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex flex-row justify-around p-10 items-center">
+          <Link href="https://www.facebook.com/newzinks">
           <AiOutlineFacebook size={30} className=" cursor-pointer text-blue-700 hover:text-blue-900" />
+          </Link>
+          <Link href="https://www.instagram.com/newz.ink">
           <AiOutlineInstagram size={30} className="cursor-pointer text-pink-700 hover:text-pink-900" />
+          </Link>
+          <Link href="https://www.youtube.com/@Newzink">
           <AiOutlineYoutube size={30} className=" cursor-pointer text-red-700 hover:text-red-900" />
+          </Link>
         </div>
-        {/* <Link href="/">
+        <Link href="/">
           <Image
-            src={Logo}
+            src="/images/logo.png"
             alt="logo"
             width="205"
             height="75"
-            className=" cursor-pointer pt-10 justify-center items-center"
-            priority
+            className=" shadow-2xl cursor-pointer"
+          
           />
-        </Link> */}
+        </Link>
       </div>
     </nav>
   );

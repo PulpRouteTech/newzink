@@ -27,8 +27,7 @@ export const PostPage = () => {
         </FacebookShareButton>
         <WhatsappShareButton
           url={"https://newzink.com/post"}
-          quote={"अंबेडकर के पोते ने राम मंदिर का आमंत्रण ठुकराया"}
-          hashtag={"#newzink"}
+         
         >
           <WhatsappIcon size={32} round />
         </WhatsappShareButton>
@@ -122,8 +121,6 @@ export const PostPage = () => {
         </FacebookShareButton>
         <WhatsappShareButton
           url={"https://newzink.com/post"}
-          quote={"अंबेडकर के पोते ने राम मंदिर का आमंत्रण ठुकराया"}
-          hashtag={"#newzink"}
         >
           <WhatsappIcon size={32} round />
         </WhatsappShareButton>
